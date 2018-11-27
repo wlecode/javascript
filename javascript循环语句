@@ -1,0 +1,62 @@
+//打印11-19
+var a=11;
+while (a<20)
+{console.log(a),++a
+}
+
+
+//使用while循环打印  1~100之间所有的奇数(使用if判断是否为奇数)
+var b=0;
+while (b<100)
+{
+b++;if (b%2!=0){console.log(b)}
+};
+
+
+//使用while循环打印 20 22 24 26 28 30
+var b=21;
+while (b<30)
+{
+b++;if (b%2==0){console.log(b)}
+};
+
+
+//使用while循环计算1~100之间所有的整数和
+var a=0;
+while (a<100)
+{a++;s=(a+1)*a/2;console.log(s)
+}
+var a=0;
+var b=0;
+while (a<100)
+{b=a+b;console.log(b);a++
+}
+
+var i=0;
+var sum=0;
+while (i<100)
+{
+if (i%3==0){ sum+=i}
+i++
+};
+console.log(sum);
+var i=1;
+var c=1;
+while (true)
+{if (i==11)
+{break
+}
+c=c*i;i++
+}
+console.log(c);
+
+
+//猜大小
+var a=100
+while (true)
+{
+  var i=prompt('input');
+  if (i<a){alert('small')}
+  else if (i>a){alert('big')}
+  else {alert('right');break};
+};
